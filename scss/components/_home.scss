@@ -22,6 +22,18 @@
         box-shadow: var(--border-color) 0px 50px 50px -20px,
             var(--border-color) 0px 30px 60px -30px,
             var(--border-color) 0px -2px 6px 0px inset;
+
+        @include abstracts.screen(xl) {
+            height: 368px;
+        }
+
+        @include abstracts.screen(md) {
+            height: 285px;
+        }
+
+        @include abstracts.screen(sm) {
+            height: 180px;
+        }
     }
 
     &__wrap-img {
@@ -35,15 +47,28 @@
         flex-direction: column;
         gap: 10px;
         rotate: -5deg;
+
+        @include abstracts.screen(xl) {
+            bottom: 20px;
+        }
     }
 
     &__logo {
         width: 184px;
+
+        @include abstracts.screen(xl) {
+            width: 144px;
+        }
     }
 
     &__title {
-        width: 100px;
+        text-align: center;
+        width: 140px;
         -webkit-text-stroke: 1px var(--text-dark-color);
+
+        @include abstracts.screen(xl) {
+            font-size: 2.6rem;
+        }
     }
 
     &__wrap {
@@ -52,6 +77,18 @@
         left: 50%;
         top: -375px;
         translate: -50%;
+
+        @include abstracts.screen(xl) {
+            top: -290px;
+        }
+
+        @include abstracts.screen(md) {
+            top: -225px;
+        }
+
+        @include abstracts.screen(sm) {
+            top: -150px;
+        }
     }
 
     &__slide {
@@ -72,5 +109,13 @@
         font-weight: 900;
         line-height: 1.1;
         text-transform: uppercase;
+
+        @include abstracts.screen(md) {
+            font-size: 4.8rem;
+        }
+
+        @include abstracts.screen(sm) {
+            font-size: 3.4rem;
+        }
     }
 }

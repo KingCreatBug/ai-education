@@ -25,6 +25,10 @@
     margin: 48px 0 0 12.5%;
     scroll-behavior: smooth;
 
+    @include abstracts.screen(lg) {
+        margin: 48px 0 0 0;
+    }
+
     &__carousel {
         @extend %flexItemCenter;
         white-space: nowrap;
@@ -74,6 +78,7 @@
 
     &__desc {
         height: 45px;
+        width: 100%;
         white-space: wrap;
         margin-top: 42px;
         line-height: 1.4;
