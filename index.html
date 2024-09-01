@@ -99,7 +99,7 @@
         <!-- Main -->
         <main>
             <!-- Home -->
-            <div class="home">
+            <div id="home" class="home">
                 <div class="home__container">
                     <video
                         class="home__video"
@@ -517,7 +517,7 @@
 
             <div class="container">
                 <!-- Developer -->
-                <div class="dev">
+                <div id="dev" class="dev">
                     <section class="dev-content">
                         <div class="dev-content__wrap">
                             <img
@@ -539,12 +539,12 @@
                     </section>
 
                     <div class="dev-container">
-                        <div class="row g-2">
+                        <div class="row g-2 js-tabs">
                             <article class="col-4">
                                 <div class="row">
                                     <div class="col-12">
                                         <div
-                                            class="dev-container__wrap dev-container__wrap--active"
+                                            class="dev-container__item dev-container__item--active"
                                         >
                                             <img
                                                 src="./assets/img/dev/border.png"
@@ -557,7 +557,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="dev-container__wrap">
+                                        <div class="dev-container__item">
                                             <img
                                                 src="./assets/img/dev/border.png"
                                                 alt=""
@@ -569,7 +569,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="dev-container__wrap">
+                                        <div class="dev-container__item">
                                             <img
                                                 src="./assets/img/dev/border.png"
                                                 alt=""
@@ -589,41 +589,52 @@
                                         alt=""
                                         class="dev-container__bg"
                                     />
-                                    <p
-                                        class="dev-container__text dev-container__text--active"
-                                    >
-                                        sort lines of theText descending by last
-                                        item of each
-                                    </p>
+                                    <div class="dev-container__box">
+                                        <p
+                                            class="dev-container__text dev-container__text--active"
+                                        >
+                                            sort lines of theText descending by
+                                            last item of each
+                                            <a
+                                                href="#!"
+                                                class="dev-container__text--link"
+                                                >Create Playground</a
+                                            >
+                                        </p>
 
-                                    <p class="dev-container__text">
-                                        theText = theText.split("\n"); <br />
-                                        theText =
-                                        theText.sort(sort_item_3).join("\n");
-                                        <br />
-                                        function sort_item_3(line1, line2){
-                                        <br />
-                                        line1 = line1.split(",");<br />
-                                        line2 = line2.split(",");<br />
-                                        if(line1[2] ==line2[2]) return 0;<br />
-                                        else if(line1[2] > line2[2]) return
-                                        -1;<br />
-                                        else return 1; }
-                                    </p>
+                                        <p class="dev-container__text">
+                                            theText = theText.split("\n");
+                                            <br />
+                                            theText =
+                                            theText.sort(sort_item_3).join("\n");
+                                            <br />
+                                            function sort_item_3(line1, line2){
+                                            <br />
+                                            line1 = line1.split(",");<br />
+                                            line2 = line2.split(",");<br />
+                                            if(line1[2] ==line2[2]) return 0;<br />
+                                            else if(line1[2] > line2[2]) return
+                                            -1;<br />
+                                            else return 1; }
+                                        </p>
 
-                                    <p class="dev-container__text">
-                                        $theText = explode("\n", $theText);<br />
-                                        uasort($theText, "sort_item_3");<br />
-                                        $theText = implode("\n", $theText);<br />
-                                        function sort_item_3($line1, $line2)
-                                        {<br />
-                                        $line1 = explode(",", $line1);<br />
-                                        $line2 = explode(",", $line2);<br />
-                                        if($line1[2] == $line2[2]) return 0;<br />
-                                        else if($line1[2] > $line2[2]) return
-                                        -1;<br />
-                                        else return 1; }
-                                    </p>
+                                        <p class="dev-container__text">
+                                            $theText = explode("\n",
+                                            $theText);<br />
+                                            uasort($theText, "sort_item_3");<br />
+                                            $theText = implode("\n",
+                                            $theText);<br />
+                                            function sort_item_3($line1, $line2)
+                                            {<br />
+                                            $line1 = explode(",", $line1);<br />
+                                            $line2 = explode(",", $line2);<br />
+                                            if($line1[2] == $line2[2]) return
+                                            0;<br />
+                                            else if($line1[2] > $line2[2])
+                                            return -1;<br />
+                                            else return 1; }
+                                        </p>
+                                    </div>
                                 </div>
                             </article>
                         </div>

@@ -31,10 +31,17 @@
 
     &__wrap {
         position: relative;
+    }
 
+    &__box,
+    &__item {
         &--active {
             background: #1da09c;
         }
+    }
+
+    &__item {
+        position: relative;
     }
 
     &__code,
@@ -65,12 +72,17 @@
     &__text {
         display: none;
         position: absolute;
-        top: 12px;
+        top: 10px;
         left: 68px;
         line-height: 1.7;
 
         &--active {
             display: block;
+        }
+
+        &--link {
+            color: #1da09c;
+            text-decoration: underline;
         }
     }
 }
