@@ -1,0 +1,76 @@
+@use "../abstracts";
+
+%flexItemCenter {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    padding: 37px 0 0;
+    background-image: url(../../assets/img/bg.png);
+    background-size: cover;
+
+    &__container {
+        @extend %flexItemCenter;
+        justify-content: center;
+    }
+
+    &__video {
+        position: relative;
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: var(--border-color) 0px 50px 50px -20px,
+            var(--border-color) 0px 30px 60px -30px,
+            var(--border-color) 0px -2px 6px 0px inset;
+    }
+
+    &__wrap-img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        translate: -50%;
+        z-index: 2;
+
+        @extend %flexItemCenter;
+        flex-direction: column;
+        gap: 10px;
+        rotate: -5deg;
+    }
+
+    &__logo {
+        width: 184px;
+    }
+
+    &__title {
+        width: 100px;
+        -webkit-text-stroke: 1px var(--text-dark-color);
+    }
+
+    &__wrap {
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -375px;
+        translate: -50%;
+    }
+
+    &__slide {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__box {
+        display: inline-block;
+        animation: 35s slide infinite linear;
+    }
+
+    &__text {
+        margin: 0 16px;
+        -webkit-text-stroke: 1px var(--text-white-color);
+        color: transparent;
+        font-size: 6.4rem;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Embed fonts -->
+        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+
+        <!-- Script -->
+        <script src="./assets/js/load.js"></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <title>Daddy Tattoo</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Main -->
+        <main>
+            <!-- Home -->
+            <div class="home">
+                <div class="home__container">
+                    <video
+                        class="home__video"
+                        height="466"
+                        autoplay
+                        muted
+                        loop
+                        poster="./assets/video/poster.png"
+                    >
+                        <source
+                            src="./assets/video/Team Daddy World.mp4"
+                            type="video/mp4"
+                        />
+                        <source
+                            src="./assets/video/Team-Daddy-World.ogg"
+                            type="video/ogg"
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="home__wrap-img">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="home__logo"
+                        />
+                        <h2 class="home__title section-heading">
+                            EDUCATION & AI
+                        </h2>
+                    </div>
+                </div>
+                <div class="home__wrap">
+                    <!-- Line 1 -->
+                    <div class="home__slide">
+                        <div class="home__box">
+                            <span class="home__text section-desc">Hello</span>
+                            <span class="home__text section-desc">Merhaba</span>
+                            <span class="home__text section-desc">Habari</span>
+                            <span class="home__text section-desc">Zdravo</span>
+                            <span class="home__text section-desc">
+                                Griassdi
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Line 2 -->
+                    <div class="home__slide home__slide1">
+                        <div class="home__box home__box1">
+                            <span class="home__text section-desc">Hallo</span>
+                            <span class="home__text section-desc"
+                                >Përshëndetje</span
+                            >
+                            <span class="home__text section-desc">مرحبا</span>
+                            <span class="home__text section-desc">Bula</span>
+                            <span class="home__text section-desc">Bonjour</span>
+                        </div>
+                    </div>
+                    <!-- Line3 -->
+                    <div class="home__slide home__slide2">
+                        <div class="home__box home__box2">
+                            <span class="home__text section-desc">Szia</span>
+                            <span class="home__text section-desc">Ciao</span>
+                            <span class="home__text section-desc"
+                                >こんにちは</span
+                            >
+                            <span class="home__text section-desc"
+                                >안녕하세요</span
+                            >
+                            <span class="home__text section-desc">ສະບາຍດີ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intro -->
+            <div id="explore" class="container">
+                <div class="intro">
+                    <section class="intro-content">
+                        <div class="intro-content__wrap">
+                            <h2 class="section-heading">Start Exploring</h2>
+                            <p class="section-desc">
+                                Explore is a well-organized tool that helps you
+                                get the most out of
+                                <span class="intro-content__color"
+                                    >DaddyWorld</span
+                                >
+                                by providing structure to guide your progress
+                                towards the next step in your programming
+                                career.
+                            </p>
+                        </div>
+                        <button class="btn intro-content__btn">
+                            <svg
+                                class="icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M10.7072 2.42896H17.5712V9.29195H16.5712V4.13596L3.2832 17.424L2.5752 16.717L15.8652 3.42996H10.7072V2.42996V2.42896Z"
+                                />
+                            </svg>
+                        </button>
+                    </section>
+
+                    <div class="intro-container">
+                        <!-- Intro Item 1 -->
+                        <article class="intro-container__wrap">
+                            <img
+                                src="./assets/img/intro/intro1.jpg"
+                                alt=""
+                                class="intro-container__thumb"
+                            />
+                            <section class="intro-container__content">
+                                <p
+                                    class="intro-container__position section-desc"
+                                >
+                                    JS
+                                </p>
+                                <h3 class="section-heading">Front-end</h3>
+                            </section>
+                        </article>
+
+                        <!-- Intro Item 2 -->
+                        <article class="intro-container__wrap">
+                            <img
+                                src="./assets/img/intro/intro2.png"
+                                alt=""
+                                class="intro-container__thumb"
+                            />
+                            <section class="intro-container__content">
+                                <p
+                                    class="intro-container__position section-desc"
+                                >
+                                    PHP
+                                </p>
+                                <h3 class="section-heading">Back-end</h3>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback -->
+            <div id="feedback" class="feedback">
+                <div class="container">
+                    <section class="feedback-content">
+                        <h2 class="feedback-content__title section-heading">
+                            All Things
+                        </h2>
+                        <div class="feedback-content__box">
+                            <button id="left" class="feedback-content__btn">
+                                <svg
+                                    class="icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 28 28"
+                                >
+                                    <g clip-path="url(#clip0_13_191)">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M6.86309 20.6705L0.394043 14.2001L6.86309 7.72974L7.80686 8.6735L2.94541 13.5336H27.9965V14.8666H2.94541L7.80686 19.7267L6.86309 20.6692V20.6705Z"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13_191">
+                                            <rect
+                                                width="27.993"
+                                                height="26.66"
+                                                transform="translate(0.00341797 0.870117)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <button id="right" class="feedback-content__btn">
+                                <svg
+                                    class="icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 28 28"
+                                >
+                                    <g clip-path="url(#clip0_13_196)">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M21.1368 7.72974L27.6045 14.2001L21.1341 20.6705L20.1917 19.7281L25.0532 14.8666H0.00341797V13.5336H25.0545L20.193 8.6735L21.1355 7.72974H21.1368Z"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13_196">
+                                            <rect
+                                                width="27.993"
+                                                height="26.66"
+                                                transform="translate(0.00341797 0.870117)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="feedback-container">
+                    <div class="feedback-container__carousel">
+                        <!-- feedback Item 1 -->
+                        <article
+                            class="feedback-container__box"
+                            draggable="false"
+                        >
+                            <div class="feedback-container__wrap">
+                                <img
+                                    src="./assets/img/feedback/avt1.jpg"
+                                    alt=""
+                                    class="feedback-container__avt"
+                                />
+                                <div class="feedback-container__stars">
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <h3
+                                class="feedback-container__title section-heading"
+                            >
+                                #Thank you
+                            </h3>
+                            <p class="feedback-container__desc">
+                                Thank you Daddy World team for creating a great
+                                learning app
+                            </p>
+                        </article>
+
+                        <!-- feedback Item 2 -->
+                        <article
+                            class="feedback-container__box"
+                            draggable="false"
+                        >
+                            <div class="feedback-container__wrap">
+                                <img
+                                    src="./assets/img/feedback/avt2.jpg"
+                                    alt=""
+                                    class="feedback-container__avt"
+                                />
+                                <div class="feedback-container__stars">
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img
+                                        src="./assets/icon/star-blank.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="./assets/icon/star-blank.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <h3
+                                class="feedback-container__title section-heading"
+                            >
+                                #Contribute
+                            </h3>
+                            <p class="feedback-container__desc">
+                                The application is great, helps me review old
+                                knowledge, I hope the team develops more new
+                                languages
+                            </p>
+                        </article>
+
+                        <!-- feedback Item 3 -->
+                        <article
+                            class="feedback-container__box"
+                            draggable="false"
+                        >
+                            <div class="feedback-container__wrap">
+                                <img
+                                    src="./assets/img/feedback/avt3.jpg"
+                                    alt=""
+                                    class="feedback-container__avt"
+                                />
+                                <div class="feedback-container__stars">
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img
+                                        src="./assets/icon/star-blank.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <h3
+                                class="feedback-container__title section-heading"
+                            >
+                                #Question
+                            </h3>
+                            <p class="feedback-container__desc">
+                                Will the team continue to develop new languages
+                                ​​in the future? If so, that would be great for
+                                students like us.
+                            </p>
+                        </article>
+
+                        <!-- feedback Item 1 -->
+                        <article
+                            class="feedback-container__box"
+                            draggable="false"
+                        >
+                            <div class="feedback-container__wrap">
+                                <img
+                                    src="./assets/img/feedback/avt1.jpg"
+                                    alt=""
+                                    class="feedback-container__avt"
+                                />
+                                <div class="feedback-container__stars">
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <h3
+                                class="feedback-container__title section-heading"
+                            >
+                                #Thank you
+                            </h3>
+                            <p class="feedback-container__desc">
+                                Thank you Daddy World team for creating a great
+                                learning app
+                            </p>
+                        </article>
+
+                        <!-- feedback Item 2 -->
+                        <article
+                            class="feedback-container__box"
+                            draggable="false"
+                        >
+                            <div class="feedback-container__wrap">
+                                <img
+                                    src="./assets/img/feedback/avt2.jpg"
+                                    alt=""
+                                    class="feedback-container__avt"
+                                />
+                                <div class="feedback-container__stars">
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img
+                                        src="./assets/icon/star-blank.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="./assets/icon/star-blank.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <h3
+                                class="feedback-container__title section-heading"
+                            >
+                                #Contribute
+                            </h3>
+                            <p class="feedback-container__desc">
+                                The application is great, helps me review old
+                                knowledge, I hope the team develops more new
+                                languages
+                            </p>
+                        </article>
+
+                        <!-- feedback Item 3 -->
+                        <article
+                            class="feedback-container__box"
+                            draggable="false"
+                        >
+                            <div class="feedback-container__wrap">
+                                <img
+                                    src="./assets/img/feedback/avt3.jpg"
+                                    alt=""
+                                    class="feedback-container__avt"
+                                />
+                                <div class="feedback-container__stars">
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img src="./assets/icon/star.svg" alt="" />
+                                    <img
+                                        src="./assets/icon/star-blank.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <h3
+                                class="feedback-container__title section-heading"
+                            >
+                                #Question
+                            </h3>
+                            <p class="feedback-container__desc">
+                                Will the team continue to develop new languages
+                                ​​in the future? If so, that would be great for
+                                students like us.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Developer -->
+                <div class="dev">
+                    <section class="dev-content">
+                        <div class="dev-content__wrap">
+                            <img
+                                src="./assets/img/dev/logo.png"
+                                alt=""
+                                class="dev-content__img"
+                            />
+                            <h2 class="dev-content__title section-heading">
+                                Developer
+                            </h2>
+                            <p class="section-desc">
+                                We currently support 2 popular coding languages.
+                                At our core, DaddyWorld is about developers. Our
+                                powerful development tools like Playground help
+                                you test, debug, and even write your own
+                                projects online.
+                            </p>
+                        </div>
+                    </section>
+
+                    <div class="dev-container">
+                        <div class="row g-2">
+                            <article class="col-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            class="dev-container__wrap dev-container__wrap--active"
+                                        >
+                                            <img
+                                                src="./assets/img/dev/border.png"
+                                                alt=""
+                                                class="dev-container__code"
+                                            />
+                                            <h3 class="dev-container__language">
+                                                LiveCode
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="dev-container__wrap">
+                                            <img
+                                                src="./assets/img/dev/border.png"
+                                                alt=""
+                                                class="dev-container__code"
+                                            />
+                                            <h3 class="dev-container__language">
+                                                JavaScript
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="dev-container__wrap">
+                                            <img
+                                                src="./assets/img/dev/border.png"
+                                                alt=""
+                                                class="dev-container__code"
+                                            />
+                                            <h3 class="dev-container__language">
+                                                PHP
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-8">
+                                <div class="dev-container__wrap">
+                                    <img
+                                        src="./assets/img/dev/code.png"
+                                        alt=""
+                                        class="dev-container__bg"
+                                    />
+                                    <p
+                                        class="dev-container__text dev-container__text--active"
+                                    >
+                                        sort lines of theText descending by last
+                                        item of each
+                                    </p>
+
+                                    <p class="dev-container__text">
+                                        theText = theText.split("\n"); <br />
+                                        theText =
+                                        theText.sort(sort_item_3).join("\n");
+                                        <br />
+                                        function sort_item_3(line1, line2){
+                                        <br />
+                                        line1 = line1.split(",");<br />
+                                        line2 = line2.split(",");<br />
+                                        if(line1[2] ==line2[2]) return 0;<br />
+                                        else if(line1[2] > line2[2]) return
+                                        -1;<br />
+                                        else return 1; }
+                                    </p>
+
+                                    <p class="dev-container__text">
+                                        $theText = explode("\n", $theText);<br />
+                                        uasort($theText, "sort_item_3");<br />
+                                        $theText = implode("\n", $theText);<br />
+                                        function sort_item_3($line1, $line2)
+                                        {<br />
+                                        $line1 = explode(",", $line1);<br />
+                                        $line2 = explode(",", $line2);<br />
+                                        if($line1[2] == $line2[2]) return 0;<br />
+                                        else if($line1[2] > $line2[2]) return
+                                        -1;<br />
+                                        else return 1; }
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <script type="module" src="./assets/js/main.js"></script>
+    </body>
+</html>

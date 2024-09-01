@@ -1,0 +1,12 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    border: 1px solid var(--border-color);
+
+    &:hover {
+        background: var(--hover-color);
+        rotate: 45deg;
+    }
+}
