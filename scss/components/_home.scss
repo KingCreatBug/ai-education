@@ -85,10 +85,6 @@
         @include abstracts.screen(md) {
             top: -225px;
         }
-
-        @include abstracts.screen(sm) {
-            top: -150px;
-        }
     }
 
     &__slide {

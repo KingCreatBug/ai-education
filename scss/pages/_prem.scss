@@ -51,6 +51,10 @@
 .prem-content {
     width: 42%;
     padding: 64px 0 68px;
+
+    @include abstracts.screen(lg) {
+        width: 100%;
+    }
 }
 
 .prem-containers {
@@ -60,11 +64,33 @@
     &__wrap {
         display: flex;
         gap: 28px;
+
+        @include abstracts.screen(xl) {
+            flex-direction: column;
+        }
+
+        &--bot {
+            position: relative;
+            @extend %flexItemCenter;
+            margin-top: 50px;
+
+            @include abstracts.screen(lg) {
+                flex-direction: column;
+            }
+        }
     }
 }
 
 .prem-container {
     width: 192px;
+
+    @include abstracts.screen(xl) {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 90px;
+        margin-bottom: 12px;
+    }
 
     &--left {
         position: relative;
@@ -72,6 +98,11 @@
         grid-template-columns: repeat(4, 1fr);
         background: var(--border-color);
         border-radius: 12px;
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
 
     &__nameplate {
@@ -89,6 +120,10 @@
         line-height: 1.07;
         letter-spacing: 1px;
         text-transform: uppercase;
+
+        @include abstracts.screen(xl) {
+            padding: 8px 49px;
+        }
     }
 
     &__box {
@@ -96,17 +131,28 @@
         height: 125px;
         flex-shrink: 0;
 
-        &:nth-of-type(3) {
-            margin-top: 220px !important;
+        @include abstracts.screen(xl) {
+            width: 100%;
         }
 
-        &:nth-of-type(4) {
-            margin-top: 32px !important;
+        &--bot {
+            @include abstracts.screen(xl) {
+                width: 192px;
+            }
+
+            @include abstracts.screen(lg) {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 
     &__box + &__box {
         margin-top: 56px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 0;
+        }
     }
 
     &__title-small {
@@ -132,10 +178,27 @@
         color: var(--text-dark-color);
         padding: 24px 32px;
 
+        @include abstracts.screen(lg) {
+            border-bottom: 14px solid var(--primary-bg-color);
+        }
+
         &:nth-of-type(3) {
             border-left: 4px solid #ffd43b;
             border-right: 4px solid #ffd43b;
             border-bottom: 4px solid #ffd43b;
+
+            @include abstracts.screen(lg) {
+                border-left: none;
+                border-right: none;
+                border-width: 14px;
+                border-color: var(--primary-bg-color);
+            }
+        }
+
+        &:nth-of-type(4) {
+            @include abstracts.screen(lg) {
+                border-bottom: none;
+            }
         }
     }
 
@@ -194,19 +257,64 @@
         margin-top: 4px;
     }
 
+    &__wrap-icon {
+        @include abstracts.screen(lg) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+    }
+
     &__icon {
-        display: block;
-        position: relative;
-        top: 10%;
-        left: 60px;
+        @extend %flexItemCenter;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+
+        position: absolute;
+        top: 23px;
+
+        @include abstracts.screen(lg) {
+            position: initial;
+            top: initial;
+            left: initial;
+        }
+
+        &:nth-child(1) {
+            left: 27%;
+
+            @include abstracts.screen(xl) {
+                left: 23%;
+            }
+        }
+
+        &:nth-child(2) {
+            left: 48%;
+
+            @include abstracts.screen(xl) {
+                left: 41%;
+            }
+        }
+
+        &:nth-child(3) {
+            left: 67%;
+
+            @include abstracts.screen(xl) {
+                left: 61%;
+            }
+        }
+
+        &:nth-child(4) {
+            left: 88%;
+
+            @include abstracts.screen(xl) {
+                left: 86%;
+            }
+        }
     }
 
     &__text-small {
         color: #616d8a;
         line-height: 1.5;
-    }
-
-    &__icon + &__icon {
-        margin-top: 126px;
     }
 }

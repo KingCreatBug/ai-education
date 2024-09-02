@@ -100,7 +100,7 @@
         <main>
             <div class="prem">
                 <div class="container">
-                    <div class="prem-banner">
+                    <div id="banner" class="prem-banner d-lg-none">
                         <div class="prem-banner__wrap">
                             <svg
                                 class="icon"
@@ -135,8 +135,11 @@
                                 Pre-order today!
                             </p>
                         </div>
-                        <span class="prem-banner__delete"
-                            ><svg
+                        <button
+                            onclick="deleteBanner()"
+                            class="prem-banner__delete"
+                        >
+                            <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="30"
                                 height="30"
@@ -150,12 +153,13 @@
                                 <path
                                     d="M12.2461 10.2539C11.6953 9.70312 10.8047 9.70312 10.2598 10.2539C9.71484 10.8047 9.70898 11.6953 10.2598 12.2402L13.0137 14.9941L10.2598 17.748C9.70898 18.2988 9.70898 19.1895 10.2598 19.7344C10.8105 20.2793 11.7012 20.2852 12.2461 19.7344L15 16.9805L17.7539 19.7344C18.3047 20.2852 19.1953 20.2852 19.7402 19.7344C20.2852 19.1836 20.291 18.293 19.7402 17.748L16.9863 14.9941L19.7402 12.2402C20.291 11.6895 20.291 10.7988 19.7402 10.2539C19.1895 9.70898 18.2988 9.70312 17.7539 10.2539L15 13.0078L12.2461 10.2539Z"
                                     fill="#c6a905"
-                                /></svg
-                        ></span>
+                                />
+                            </svg>
+                        </button>
                     </div>
 
                     <section class="prem-content">
-                        <h2 class="section-heading">Here are the plans</h2>
+                        <h2 class="section-heading">Here are the plans!</h2>
                         <p class="section-desc">
                             Our free plan lets you get started right away.
                             Switch to the Pro plan to get more workouts.
@@ -207,29 +211,10 @@
                                         >Get in touch!</a
                                     >
                                 </div>
-
-                                <div class="prem-container__box">
-                                    <p class="prem-container__title-small">
-                                        Free AI Chat
-                                    </p>
-                                    <p class="prem-container__text"></p>
-                                        Chat AI for free use, plus 3-day trial
-                                        exercises
-                                    </p>
-                                </div>
-
-                                <div class="prem-container__box">
-                                    <p class="prem-container__title-small">
-                                        Diverse exercises
-                                    </p>
-                                    <p class="prem-container__text"></p>
-                                    Many interesting and diverse exercises, with AI correcting them
-                                    </p>
-                                </div>
                             </article>
 
                             <article class="prem-container--left">
-                                <p class="prem-container__nameplate">
+                                <p class="prem-container__nameplate d-lg-none">
                                     Most Popular
                                 </p>
 
@@ -271,8 +256,6 @@
                                             forever!
                                         </p>
                                     </div>
-                                    <img src="./assets/icon/check.svg" alt="" class="prem-container__icon">
-                                    <img src="./assets/icon/minus.svg" alt="" class="prem-container__icon">
                                 </article>
 
                                 <article class="prem-container__wrap">
@@ -297,7 +280,10 @@
                                         Best for individuals want Pro exercises,
                                         but only want to try for 1 month
                                     </p>
-                                    <a href="#!" class="prem-container__btn prem-container__btn--color">
+                                    <a
+                                        href="#!"
+                                        class="prem-container__btn prem-container__btn--color"
+                                    >
                                         Get Pro Lite
                                     </a>
                                     <p class="prem-container__price">
@@ -312,8 +298,6 @@
                                             per 1 month
                                         </p>
                                     </div>
-                                    <img src="./assets/icon/check.svg" alt="" class="prem-container__icon">
-                                    <img src="./assets/icon/check.svg" alt="" class="prem-container__icon">
                                 </article>
 
                                 <article class="prem-container__wrap">
@@ -339,7 +323,10 @@
                                         outstanding features and diverse
                                         exercises
                                     </p>
-                                    <a href="#!" class="prem-container__btn prem-container__btn--color">
+                                    <a
+                                        href="#!"
+                                        class="prem-container__btn prem-container__btn--color"
+                                    >
                                         Get Pro
                                     </a>
                                     <p class="prem-container__price">
@@ -354,8 +341,6 @@
                                             per 3 month
                                         </p>
                                     </div>
-                                    <img src="./assets/icon/check.svg" alt="" class="prem-container__icon">
-                                    <img src="./assets/icon/check.svg" alt="" class="prem-container__icon">
                                 </article>
 
                                 <article class="prem-container__wrap">
@@ -381,7 +366,10 @@
                                         organizations with many projects or
                                         application.
                                     </p>
-                                    <a href="#!" class="prem-container__btn prem-container__btn--color">
+                                    <a
+                                        href="#!"
+                                        class="prem-container__btn prem-container__btn--color"
+                                    >
                                         Get Pro Max
                                     </a>
                                     <p class="prem-container__price">
@@ -396,10 +384,111 @@
                                             per year
                                         </p>
                                     </div>
-                                    <img src="./assets/icon/check.svg" alt="" class="prem-container__icon">
-                                    <img src="./assets/icon/check.svg" alt="" class="prem-container__icon">
                                 </article>
                             </article>
+                        </div>
+
+                        <div class="prem-containers__wrap--bot">
+                            <div
+                                class="prem-container__box prem-container__box--bot"
+                            >
+                                <p class="prem-container__title-small">
+                                    Free AI Chat
+                                </p>
+                                <p class="prem-container__text">
+                                    Chat AI for free use, plus 3-day trial
+                                    exercises
+                                </p>
+                            </div>
+
+                            <div class="prem-container__wrap-icon">
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/check.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Free
+                                    </p>
+                                </div>
+
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/check.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Pro Lite
+                                    </p>
+                                </div>
+
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/check.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Pro
+                                    </p>
+                                </div>
+
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/check.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Pro Max
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prem-containers__wrap--bot">
+                            <div
+                                class="prem-container__box prem-container__box--bot"
+                            >
+                                <p class="prem-container__title-small">
+                                    Diverse exercises
+                                </p>
+                                <p class="prem-container__text">
+                                    Many interesting and diverse exercises, with
+                                    AI correcting them
+                                </p>
+                            </div>
+                            <div class="prem-container__wrap-icon">
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/minus.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Free
+                                    </p>
+                                </div>
+
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/check.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Pro Lite
+                                    </p>
+                                </div>
+
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/check.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Pro
+                                    </p>
+                                </div>
+
+                                <div class="prem-container__icon">
+                                    <img src="./assets/icon/check.svg" alt="" />
+                                    <p
+                                        class="prem-container__text--small d-none d-lg-block"
+                                    >
+                                        Pro Max
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -410,6 +499,6 @@
         <script>
             load("#footer", "./templates/footer.html");
         </script>
-        <script type="module" src="./assets/js/main.js"></script>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
